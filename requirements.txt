@@ -1,0 +1,13 @@
+torch==2.2.2
+numpy<2
+transformers==4.39.3
+sentence-transformers==2.7.0
+langchain
+langchain-community
+langchain-openai
+langchain-text-splitters
+faiss-cpu
+rank_bm25
+python-dotenv
+fastapi
+uvicorn

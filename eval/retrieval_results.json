@@ -1,0 +1,20 @@
+[
+  {
+    "setting": "hybrid + rerank (full)",
+    "Hit@K": 1.0,
+    "MRR": 0.912,
+    "Ctx_Precision": 0.574,
+    "Ctx_Recall": 0.971,
+    "Reject_Recall(oos)": 1.0,
+    "False_Reject_Rate(in)": 0.0
+  },
+  {
+    "setting": "hybrid no_rerank (ablation)",
+    "Hit@K": 0.941,
+    "MRR": 0.799,
+    "Ctx_Precision": 0.5,
+    "Ctx_Recall": 0.941,
+    "Reject_Recall(oos)": 0.0,
+    "False_Reject_Rate(in)": 0.0
+  }
+]
