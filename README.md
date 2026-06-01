@@ -116,14 +116,14 @@
 
 **反直觉发现**:tutorial 检索 Hit@4=100%,但**生成 faithfulness 仅 0.72、citation 仅 0.67**——证据充足时模型反而更敢"补内容"。后续要在 Prompt 里加更强的"仅基于上下文"约束、缩短 context 长度。
 
-### 评估方法学
+### 评估方法
 
 - **gold set 生成**:按 doc_type 分层抽样(tutorial 21 / advanced 15 / reference 10 / guide 9 / concept 10),每文件最多 1 道,LLM 在受控 prompt 下出"自然用户口吻"问题,期望来源由抽样自动绑定;启发式过滤泄漏(词重叠>0.95),1 道因"话题共通词"导致的过滤误报由人工放行
 - **hard-OOS 设计**:8 道 4 类(同类竞品 / 不存在功能 / 关联底层 / 超纲)手工编写,专门考验 Critic 层在语义邻居上的边界判别
 - **tuning/test 隔离**:`random.seed(42)` 分层切分,所有调参在 tuning(21 道),报告数字仅来自 test(52 道);评估脚本默认 `--split test`
 - **已知局限**:gold set 由 LLM 生成,可能偏向系统风格;hard-OOS n=6(test)统计精度有限;生产应改为真实用户日志
 
-## 快速开始
+## 如何运行
 
 ```bash
 # 1. 创建虚拟环境并安装依赖
@@ -152,31 +152,4 @@ python eval/eval_retrieval.py            # 检索指标(无需 key)
 python eval/eval_judge.py                # 生成指标(需 key)
 ```
 
-## 目录结构
 
-```
-docs-rag/
-├── data/raw/             FastAPI 文档语料(.md)
-├── src/
-│   ├── config.py         配置(从 .env 读取)
-│   ├── utils.py          文档类型判定、清洗、BM25 分词
-│   ├── embeddings.py     bge 嵌入封装
-│   ├── reranker.py       bge-reranker 精排
-│   ├── build_index.py    阶段1:离线索引构建
-│   ├── retrieval.py      阶段2:混合召回 + rerank + 拒答
-│   ├── llm.py            LLM 客户端(OpenAI 兼容)
-│   ├── rag.py            阶段2:查询改写 + 引用生成
-│   └── api.py            阶段4:FastAPI /ask 接口
-├── eval/
-│   ├── gold_set.json     20 题 gold set
-│   ├── eval_retrieval.py 检索指标 + 消融
-│   ├── eval_judge.py     LLM-as-a-Judge 生成评估
-│   └── *_results.json    评估结果
-└── storage/              生成的索引(FAISS + BM25)
-```
-
-## 工程过程中的真实问题与决策
-
-- **chromadb 在目标机器上原生库段错误** → 改用 FAISS,更主流且兼容性好
-- **torch 2.12 CPU 轮子 DLL 加载失败**(VC++ 运行库不匹配)→ 降级到稳定的 torch 2.2.2 + numpy<2
-- **RAGAS 与新版 langchain-community 不兼容**(import 已移除的 `chat_models.vertexai`) → 改自建评估体系 + LLM-as-a-Judge,更可控也更贴现代实践
