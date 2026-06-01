@@ -1,0 +1,1041 @@
+[
+  {
+    "id": "I01",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How can OAuth2PasswordBearer be used with FastAPI's dependency injection?",
+    "expected_sources": [
+      "tutorial/security/first-steps.md"
+    ],
+    "slot_meta": {
+      "header": "Security - First Steps { #security-first-steps } > **FastAPI**'s `OAuth2Password",
+      "chunk_preview": "///  \nThe `oauth2_scheme` variable is an instance of `OAuth2PasswordBearer`, but it is also a \"callable\".  \nIt could be called as:  \n```Python\noauth2_scheme(some, parameters)\n```  \nSo, it can be used "
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I02",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "What happens if a client sends extra cookies not defined in the API?",
+    "expected_sources": [
+      "tutorial/cookie-param-models.md"
+    ],
+    "slot_meta": {
+      "header": "Cookie Parameter Models { #cookie-parameter-models } > Forbid Extra Cookies { #f",
+      "chunk_preview": "If a client tries to send some **extra cookies**, they will receive an **error** response.  \nPoor cookie banners with all their effort to get your consent for the <dfn title=\"This is another joke. Don"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I03",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How can I add settings to a shared router without editing its file?",
+    "expected_sources": [
+      "tutorial/bigger-applications.md"
+    ],
+    "slot_meta": {
+      "header": "Bigger Applications - Multiple Files { #bigger-applications-multiple-files } > T",
+      "chunk_preview": "### Include an `APIRouter` with a custom `prefix`, `tags`, `responses`, and `dependencies` { #include-an-apirouter-with-a-custom-prefix-tags-responses-and-dependencies }  \nNow, let's imagine your orga"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I04",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How can I convert a Pydantic model to a JSON-compatible format?",
+    "expected_sources": [
+      "tutorial/encoder.md"
+    ],
+    "slot_meta": {
+      "header": "JSON Compatible Encoder { #json-compatible-encoder }",
+      "chunk_preview": "# JSON Compatible Encoder { #json-compatible-encoder }  \nThere are some cases where you might need to convert a data type (like a Pydantic model) to something compatible with JSON (like a `dict`, `lis"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I05",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "What types of systems and databases is FastAPI compatible with?",
+    "expected_sources": [
+      "tutorial/dependencies/index.md"
+    ],
+    "slot_meta": {
+      "header": "Dependencies { #dependencies } > **FastAPI** compatibility { #fastapi-compatibil",
+      "chunk_preview": "## **FastAPI** compatibility { #fastapi-compatibility }  \nThe simplicity of the dependency injection system makes **FastAPI** compatible with:  \n* all the relational databases\n* NoSQL databases\n* exte"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I06",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How can I apply dependencies to multiple path operations at once?",
+    "expected_sources": [
+      "tutorial/dependencies/global-dependencies.md"
+    ],
+    "slot_meta": {
+      "header": "Global Dependencies { #global-dependencies } > Dependencies for groups of *path ",
+      "chunk_preview": "## Dependencies for groups of *path operations* { #dependencies-for-groups-of-path-operations }  \nLater, when reading about how to structure bigger applications ([Bigger Applications - Multiple Files]"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I08",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How do I define a data model for a request body in FastAPI?",
+    "expected_sources": [
+      "tutorial/body.md"
+    ],
+    "slot_meta": {
+      "header": "Request Body { #request-body } > Create your data model { #create-your-data-mode",
+      "chunk_preview": "## Create your data model { #create-your-data-model }  \nThen you declare your data model as a class that inherits from `BaseModel`.  \nUse standard Python types for all the attributes:  \n{* ../../docs_"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I09",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How can I prevent extra form fields from being accepted?",
+    "expected_sources": [
+      "tutorial/request-form-models.md"
+    ],
+    "slot_meta": {
+      "header": "Form Models { #form-models } > Forbid Extra Form Fields { #forbid-extra-form-fie",
+      "chunk_preview": "## Forbid Extra Form Fields { #forbid-extra-form-fields }  \nIn some special use cases (probably not very common), you might want to **restrict** the form fields to only those declared in the Pydantic "
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I10",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How do I save and return a partially updated model in FastAPI?",
+    "expected_sources": [
+      "tutorial/body-updates.md"
+    ],
+    "slot_meta": {
+      "header": "Body - Updates { #body-updates } > Partial updates with `PATCH` { #partial-updat",
+      "chunk_preview": "* Convert the copied model to something that can be stored in your DB (for example, using the `jsonable_encoder`).\n* This is comparable to using the model's `.model_dump()` method again, but it makes "
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I11",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "When should I use response_model instead of the return type annotation?",
+    "expected_sources": [
+      "tutorial/response-model.md"
+    ],
+    "slot_meta": {
+      "header": "Response Model - Return Type { #response-model-return-type } > Add an output mod",
+      "chunk_preview": "### `response_model` or Return Type { #response-model-or-return-type }  \nIn this case, because the two models are different, if we annotated the function return type as `UserOut`, the editor and tools"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I12",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How can I group related endpoints in my API documentation?",
+    "expected_sources": [
+      "tutorial/path-operation-configuration.md"
+    ],
+    "slot_meta": {
+      "header": "Path Operation Configuration { #path-operation-configuration } > Tags { #tags }",
+      "chunk_preview": "## Tags { #tags }  \nYou can add tags to your *path operation*, pass the parameter `tags` with a `list` of `str` (commonly just one `str`):  \n{* ../../docs_src/path_operation_configuration/tutorial002_"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I13",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How do you import the Field class in FastAPI?",
+    "expected_sources": [
+      "tutorial/body-fields.md"
+    ],
+    "slot_meta": {
+      "header": "Body - Fields { #body-fields } > Import `Field` { #import-field }",
+      "chunk_preview": "## Import `Field` { #import-field }  \nFirst, you have to import it:  \n{* ../../docs_src/body_fields/tutorial001_an_py310.py hl[4] *}  \n/// warning  \nNotice that `Field` is imported directly from `pyda"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I14",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How do I serve static files in a FastAPI application?",
+    "expected_sources": [
+      "tutorial/static-files.md"
+    ],
+    "slot_meta": {
+      "header": "Static Files { #static-files } > Use `StaticFiles` { #use-staticfiles }",
+      "chunk_preview": "## Use `StaticFiles` { #use-staticfiles }  \n* Import `StaticFiles`.\n* \"Mount\" a `StaticFiles()` instance in a specific path.  \n{* ../../docs_src/static_files/tutorial001_py310.py hl[2,6] *}  \n/// note"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I15",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How should I structure my FastAPI app file for testing?",
+    "expected_sources": [
+      "tutorial/testing.md"
+    ],
+    "slot_meta": {
+      "header": "Testing { #testing } > Separating tests { #separating-tests } > **FastAPI** app ",
+      "chunk_preview": "### **FastAPI** app file { #fastapi-app-file }  \nLet's say you have a file structure as described in [Bigger Applications](bigger-applications.md):  \n```\n.\n├── app\n│ ├── __init__.py\n│ └── main.py\n``` "
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I16",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How does FastAPI handle the order of exit code execution in nested dependencies with yield?",
+    "expected_sources": [
+      "tutorial/dependencies/dependencies-with-yield.md"
+    ],
+    "slot_meta": {
+      "header": "Dependencies with yield { #dependencies-with-yield } > Sub-dependencies with `yi",
+      "chunk_preview": "## Sub-dependencies with `yield` { #sub-dependencies-with-yield }  \nYou can have sub-dependencies and \"trees\" of sub-dependencies of any size and shape, and any or all of them can use `yield`.  \n**Fas"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I17",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How can I extract username and password from a form submission in FastAPI?",
+    "expected_sources": [
+      "tutorial/security/simple-oauth2.md"
+    ],
+    "slot_meta": {
+      "header": "Simple OAuth2 with Password and Bearer { #simple-oauth2-with-password-and-bearer",
+      "chunk_preview": "### `OAuth2PasswordRequestForm` { #oauth2passwordrequestform }  \nFirst, import `OAuth2PasswordRequestForm`, and use it as a dependency with `Depends` in the *path operation* for `/token`:  \n{* ../../d"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I18",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How can I make a query parameter required in FastAPI?",
+    "expected_sources": [
+      "tutorial/query-params.md"
+    ],
+    "slot_meta": {
+      "header": "Query Parameters { #query-parameters } > Required query parameters { #required-q",
+      "chunk_preview": "## Required query parameters { #required-query-parameters }  \nWhen you declare a default value for non-path parameters (for now, we have only seen query parameters), then it is not required.  \nIf you "
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I19",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How do I handle form submissions in FastAPI?",
+    "expected_sources": [
+      "tutorial/request-forms.md"
+    ],
+    "slot_meta": {
+      "header": "Form Data { #form-data }",
+      "chunk_preview": "# Form Data { #form-data }  \nWhen you need to receive form fields instead of JSON, you can use `Form`.  \n/// note  \nTo use forms, first install [`python-multipart`](https://github.com/Kludex/python-mu"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I20",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How can I paginate query results when reading data from the database?",
+    "expected_sources": [
+      "tutorial/sql-databases.md"
+    ],
+    "slot_meta": {
+      "header": "SQL (Relational) Databases { #sql-relational-databases } > Create the App with a",
+      "chunk_preview": "### Read Heroes { #read-heroes }  \nWe can **read** `Hero`s from the database using a `select()`. We can include a `limit` and `offset` to paginate the results.  \n{* ../../docs_src/sql_databases/tutori"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I21",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "What is the difference between OpenID and OpenID Connect?",
+    "expected_sources": [
+      "tutorial/security/index.md"
+    ],
+    "slot_meta": {
+      "header": "Security { #security } > OpenID Connect { #openid-connect } > OpenID (not \"OpenI",
+      "chunk_preview": "### OpenID (not \"OpenID Connect\") { #openid-not-openid-connect }  \nThere was also an \"OpenID\" specification. That tried to solve the same thing as **OpenID Connect**, but was not based on OAuth2.  \nSo"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I23",
+    "type": "single",
+    "doc_type": "advanced",
+    "question": "How can I control when cleanup code runs in a dependency?",
+    "expected_sources": [
+      "advanced/advanced-dependencies.md"
+    ],
+    "slot_meta": {
+      "header": "Advanced Dependencies { #advanced-dependencies } > Dependencies with `yield`, `H",
+      "chunk_preview": "### Dependencies with `yield` and `scope` { #dependencies-with-yield-and-scope }  \nIn version 0.121.0, FastAPI added support for `Depends(scope=\"function\")` for dependencies with `yield`.  \nUsing `Dep"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I24",
+    "type": "single",
+    "doc_type": "advanced",
+    "question": "How can I test lifespan events in FastAPI applications?",
+    "expected_sources": [
+      "advanced/testing-events.md"
+    ],
+    "slot_meta": {
+      "header": "Testing Events: lifespan and startup - shutdown { #testing-events-lifespan-and-s",
+      "chunk_preview": "# Testing Events: lifespan and startup - shutdown { #testing-events-lifespan-and-startup-shutdown }  \nWhen you need `lifespan` to run in your tests, you can use the `TestClient` with a `with` statemen"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I25",
+    "type": "single",
+    "doc_type": "advanced",
+    "question": "How can I set cookies in a FastAPI response while still returning other data?",
+    "expected_sources": [
+      "advanced/response-cookies.md"
+    ],
+    "slot_meta": {
+      "header": "Response Cookies { #response-cookies } > Use a `Response` parameter { #use-a-res",
+      "chunk_preview": "# Response Cookies { #response-cookies }  \n## Use a `Response` parameter { #use-a-response-parameter }  \nYou can declare a parameter of type `Response` in your *path operation function*.  \nAnd then yo"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I26",
+    "type": "single",
+    "doc_type": "advanced",
+    "question": "How can I specify multiple possible types when I can't use the vertical bar syntax?",
+    "expected_sources": [
+      "advanced/advanced-python-types.md"
+    ],
+    "slot_meta": {
+      "header": "Advanced Python Types { #advanced-python-types } > Using `Union` or `Optional` {",
+      "chunk_preview": "## Using `Union` or `Optional` { #using-union-or-optional }  \nIf your code for some reason can't use `|`, for example if it's not in a type annotation but in something like `response_model=`, instead "
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I27",
+    "type": "single",
+    "doc_type": "advanced",
+    "question": "Where can I find additional ASGI middlewares for FastAPI?",
+    "expected_sources": [
+      "advanced/middleware.md"
+    ],
+    "slot_meta": {
+      "header": "Advanced Middleware { #advanced-middleware } > Other middlewares { #other-middle",
+      "chunk_preview": "## Other middlewares { #other-middlewares }  \nThere are many other ASGI middlewares.  \nFor example:  \n* [Uvicorn's `ProxyHeadersMiddleware`](https://github.com/encode/uvicorn/blob/master/uvicorn/middl"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I28",
+    "type": "single",
+    "doc_type": "advanced",
+    "question": "How should WebSocket clients be implemented in a production environment?",
+    "expected_sources": [
+      "advanced/websockets.md"
+    ],
+    "slot_meta": {
+      "header": "WebSockets { #websockets } > WebSockets client { #websockets-client } > In produ",
+      "chunk_preview": "## WebSockets client { #websockets-client }  \n### In production { #in-production }  \nIn your production system, you probably have a frontend created with a modern framework like React, Vue.js or Angul"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I29",
+    "type": "single",
+    "doc_type": "advanced",
+    "question": "How can I test WebSocket endpoints in FastAPI?",
+    "expected_sources": [
+      "advanced/testing-websockets.md"
+    ],
+    "slot_meta": {
+      "header": "Testing WebSockets { #testing-websockets }",
+      "chunk_preview": "# Testing WebSockets { #testing-websockets }  \nYou can use the same `TestClient` to test WebSockets.  \nFor this, you use the `TestClient` in a `with` statement, connecting to the WebSocket:  \n{* ../.."
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I30",
+    "type": "single",
+    "doc_type": "advanced",
+    "question": "How can I organize larger FastAPI applications with multiple endpoint groups?",
+    "expected_sources": [
+      "advanced/generate-clients.md"
+    ],
+    "slot_meta": {
+      "header": "Generating SDKs { #generating-sdks } > FastAPI App with Tags { #fastapi-app-with",
+      "chunk_preview": "## FastAPI App with Tags { #fastapi-app-with-tags }  \nIn many cases, your FastAPI app will be bigger, and you will probably use tags to separate different groups of *path operations*.  \nFor example, y"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I31",
+    "type": "single",
+    "doc_type": "advanced",
+    "question": "How can I protect my app from timing attacks during authentication?",
+    "expected_sources": [
+      "advanced/security/http-basic-auth.md"
+    ],
+    "slot_meta": {
+      "header": "HTTP Basic Auth { #http-basic-auth } > Check the username { #check-the-username ",
+      "chunk_preview": "But in our code we are actually using `secrets.compare_digest()`.  \nIn short, it will take the same time to compare `stanleyjobsox` to `stanleyjobson` than it takes to compare `johndoe` to `stanleyjob"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I32",
+    "type": "single",
+    "doc_type": "advanced",
+    "question": "How can I make custom headers visible to browser clients?",
+    "expected_sources": [
+      "advanced/response-headers.md"
+    ],
+    "slot_meta": {
+      "header": "Response Headers { #response-headers } > Custom Headers { #custom-headers }",
+      "chunk_preview": "## Custom Headers { #custom-headers }  \nKeep in mind that custom proprietary headers can be added [using the `X-` prefix](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers).  \nBut if you have "
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I33",
+    "type": "single",
+    "doc_type": "advanced",
+    "question": "How can I send binary data in a JSON request?",
+    "expected_sources": [
+      "advanced/json-base64-bytes.md"
+    ],
+    "slot_meta": {
+      "header": "JSON with Bytes as Base64 { #json-with-bytes-as-base64 } > Pydantic `bytes` { #p",
+      "chunk_preview": "```json\n{\n\"description\": \"Some data\",\n\"data\": \"aGVsbG8=\"\n}\n```  \n/// tip  \n`aGVsbG8=` is the base64 encoding of `hello`.  \n///  \nAnd then Pydantic will decode the base64 string and give you the origin"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I34",
+    "type": "single",
+    "doc_type": "advanced",
+    "question": "How can I bypass FastAPI's automatic data processing for a response?",
+    "expected_sources": [
+      "advanced/response-directly.md"
+    ],
+    "slot_meta": {
+      "header": "Return a Response Directly { #return-a-response-directly } > Return a `Response`",
+      "chunk_preview": "## Return a `Response` { #return-a-response }  \nYou can return a `Response` or any sub-class of it.  \n/// note  \n`JSONResponse` itself is a sub-class of `Response`.  \n///  \nAnd when you return a `Resp"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I35",
+    "type": "single",
+    "doc_type": "advanced",
+    "question": "What is the default response type used in FastAPI?",
+    "expected_sources": [
+      "advanced/custom-response.md"
+    ],
+    "slot_meta": {
+      "header": "Custom Response - HTML, Stream, File, others { #custom-response-html-stream-file",
+      "chunk_preview": "### `JSONResponse` { #jsonresponse }  \nTakes some data and returns an `application/json` encoded response.  \nThis is the default response used in **FastAPI**, as you read above.  \n/// note | Technical"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I36",
+    "type": "single",
+    "doc_type": "advanced",
+    "question": "How do you render an HTML template in a FastAPI endpoint?",
+    "expected_sources": [
+      "advanced/templates.md"
+    ],
+    "slot_meta": {
+      "header": "Templates { #templates } > Using `Jinja2Templates` { #using-jinja2templates }",
+      "chunk_preview": "## Using `Jinja2Templates` { #using-jinja2templates }  \n* Import `Jinja2Templates`.\n* Create a `templates` object that you can reuse later.\n* Declare a `Request` parameter in the *path operation* that"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I37",
+    "type": "single",
+    "doc_type": "reference",
+    "question": "How can I create a dependency that works for both HTTP requests and WebSockets?",
+    "expected_sources": [
+      "reference/httpconnection.md"
+    ],
+    "slot_meta": {
+      "header": "`HTTPConnection` class",
+      "chunk_preview": "# `HTTPConnection` class  \nWhen you want to define dependencies that should be compatible with both HTTP and WebSockets, you can define a parameter that takes an `HTTPConnection` instead of a `Request"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I38",
+    "type": "single",
+    "doc_type": "reference",
+    "question": "How can I handle file uploads in a FastAPI endpoint?",
+    "expected_sources": [
+      "reference/uploadfile.md"
+    ],
+    "slot_meta": {
+      "header": "`UploadFile` class",
+      "chunk_preview": "# `UploadFile` class  \nYou can define *path operation function* parameters to be of the type `UploadFile` to receive files from the request.  \nYou can import it directly from `fastapi`:  \n```python\nfr"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I39",
+    "type": "single",
+    "doc_type": "reference",
+    "question": "What middleware options are available in FastAPI?",
+    "expected_sources": [
+      "reference/middleware.md"
+    ],
+    "slot_meta": {
+      "header": "Middleware",
+      "chunk_preview": "# Middleware  \nThere are several middlewares available provided by Starlette directly.  \nRead more about them in the [FastAPI docs for Middleware](https://fastapi.tiangolo.com/advanced/middleware/).  "
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I40",
+    "type": "single",
+    "doc_type": "reference",
+    "question": "How do you define dependencies in FastAPI?",
+    "expected_sources": [
+      "reference/dependencies.md"
+    ],
+    "slot_meta": {
+      "header": "Dependencies - `Depends()` and `Security()` > `Depends()`",
+      "chunk_preview": "# Dependencies - `Depends()` and `Security()`  \n## `Depends()`  \nDependencies are handled mainly with the special function `Depends()` that takes a callable.  \nHere is the reference for it and its par"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I41",
+    "type": "single",
+    "doc_type": "reference",
+    "question": "How do I import the main FastAPI class in my code?",
+    "expected_sources": [
+      "reference/fastapi.md"
+    ],
+    "slot_meta": {
+      "header": "`FastAPI` class",
+      "chunk_preview": "# `FastAPI` class  \nHere's the reference information for the `FastAPI` class, with all its parameters, attributes and methods.  \nYou can import the `FastAPI` class directly from `fastapi`:  \n```python"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I43",
+    "type": "single",
+    "doc_type": "reference",
+    "question": "Where can I find detailed API documentation for FastAPI?",
+    "expected_sources": [
+      "reference/index.md"
+    ],
+    "slot_meta": {
+      "header": "Reference",
+      "chunk_preview": "# Reference  \nHere's the reference or code API, the classes, functions, parameters, attributes, and\nall the FastAPI parts you can use in your applications.  \nIf you want to **learn FastAPI** you are m"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I44",
+    "type": "single",
+    "doc_type": "reference",
+    "question": "How can I easily reference HTTP status codes in FastAPI without memorizing numbers?",
+    "expected_sources": [
+      "reference/status.md"
+    ],
+    "slot_meta": {
+      "header": "Status Codes",
+      "chunk_preview": "* 403: `status.HTTP_403_FORBIDDEN`\n* etc.  \nIt can be convenient to quickly access HTTP (and WebSocket) status codes in your app, using autocompletion for the name without having to remember the integ"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I46",
+    "type": "single",
+    "doc_type": "reference",
+    "question": "How do you handle WebSocket connections in FastAPI?",
+    "expected_sources": [
+      "reference/websockets.md"
+    ],
+    "slot_meta": {
+      "header": "WebSockets",
+      "chunk_preview": "# WebSockets  \nWhen defining WebSockets, you normally declare a parameter of type `WebSocket` and with it you can read data from the client and send data to it.  \nRead more about it in the [FastAPI do"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I47",
+    "type": "single",
+    "doc_type": "guide",
+    "question": "How can I start a FastAPI server from the command line?",
+    "expected_sources": [
+      "deployment/manually.md"
+    ],
+    "slot_meta": {
+      "header": "Run a Server Manually { #run-a-server-manually } > Use the `fastapi run` Command",
+      "chunk_preview": "<span style=\"background-color:#007166\"><font color=\"#D3D7CF\"> server </font></span>  Server started at <font color=\"#729FCF\"><u style=\"text-decoration-style:solid\">http://0.0.0.0:8000</u></font>\n<span"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I49",
+    "type": "single",
+    "doc_type": "guide",
+    "question": "Should I hide API documentation in production for security?",
+    "expected_sources": [
+      "how-to/conditional-openapi.md"
+    ],
+    "slot_meta": {
+      "header": "Conditional OpenAPI { #conditional-openapi } > About security, APIs, and docs { ",
+      "chunk_preview": "## About security, APIs, and docs { #about-security-apis-and-docs }  \nHiding your documentation user interfaces in production *shouldn't* be the way to protect your API.  \nThat doesn't add any extra s"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I50",
+    "type": "single",
+    "doc_type": "guide",
+    "question": "How can I test a database in a FastAPI application?",
+    "expected_sources": [
+      "how-to/testing-database.md"
+    ],
+    "slot_meta": {
+      "header": "Testing a Database { #testing-a-database }",
+      "chunk_preview": "# Testing a Database { #testing-a-database }  \nYou can study about databases, SQL, and SQLModel in the [SQLModel docs](https://sqlmodel.tiangolo.com/). 🤓  \nThere's a mini [tutorial on using SQLModel w"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I51",
+    "type": "single",
+    "doc_type": "guide",
+    "question": "How can I change the URLs for the auto-generated documentation pages?",
+    "expected_sources": [
+      "how-to/general.md"
+    ],
+    "slot_meta": {
+      "header": "General - How To - Recipes { #general-how-to-recipes } > OpenAPI Docs URLs { #op",
+      "chunk_preview": "## OpenAPI Docs URLs { #openapi-docs-urls }  \nTo update the URLs used for the automatically generated docs user interfaces, read the docs for [Tutorial - Metadata and Docs URLs](../tutorial/metadata.m"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I52",
+    "type": "single",
+    "doc_type": "guide",
+    "question": "How do I download the static files for customizing API docs?",
+    "expected_sources": [
+      "how-to/custom-docs-ui-assets.md"
+    ],
+    "slot_meta": {
+      "header": "Custom Docs UI Static Assets (Self-Hosting) { #custom-docs-ui-static-assets-self",
+      "chunk_preview": "### Download the files { #download-the-files }  \nDownload the static files needed for the docs and put them on that `static/` directory.  \nYou can probably right-click each link and select an option s"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I53",
+    "type": "single",
+    "doc_type": "guide",
+    "question": "How can I avoid regenerating the OpenAPI schema on every request?",
+    "expected_sources": [
+      "how-to/extending-openapi.md"
+    ],
+    "slot_meta": {
+      "header": "Extending OpenAPI { #extending-openapi } > Overriding the defaults { #overriding",
+      "chunk_preview": "### Cache the OpenAPI schema { #cache-the-openapi-schema }  \nYou can use the property `.openapi_schema` as a \"cache\", to store your generated schema.  \nThat way, your application won't have to generat"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I54",
+    "type": "single",
+    "doc_type": "guide",
+    "question": "How does Pydantic v2 improve API documentation and client generation?",
+    "expected_sources": [
+      "how-to/separate-openapi-schemas.md"
+    ],
+    "slot_meta": {
+      "header": "Separate OpenAPI Schemas for Input and Output or Not { #separate-openapi-schemas",
+      "chunk_preview": "<div class=\"screenshot\">\n<img src=\"/img/tutorial/separate-openapi-schemas/image04.png\">\n</div>  \nWith this feature from **Pydantic v2**, your API documentation is more **precise**, and if you have aut"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I55",
+    "type": "single",
+    "doc_type": "guide",
+    "question": "How can I run multiple worker processes with Uvicorn?",
+    "expected_sources": [
+      "deployment/server-workers.md"
+    ],
+    "slot_meta": {
+      "header": "Server Workers - Uvicorn with Workers { #server-workers-uvicorn-with-workers } >",
+      "chunk_preview": "<span style=\"background-color:#007166\"><font color=\"#D3D7CF\"> INFO </font></span>  Started server process <b>[</b><font color=\"#34E2E2\"><b>27369</b></font><b>]</b>\n<span style=\"background-color:#00716"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I56",
+    "type": "single",
+    "doc_type": "concept",
+    "question": "What technologies are used in the full stack FastAPI template?",
+    "expected_sources": [
+      "project-generation.md"
+    ],
+    "slot_meta": {
+      "header": "Full Stack FastAPI Template { #full-stack-fastapi-template } > Full Stack FastAP",
+      "chunk_preview": "## Full Stack FastAPI Template - Technology Stack and Features { #full-stack-fastapi-template-technology-stack-and-features }  \n- ⚡ [**FastAPI**](https://fastapi.tiangolo.com) for the Python backend A"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I57",
+    "type": "single",
+    "doc_type": "concept",
+    "question": "What inspired the creation of FastAPI?",
+    "expected_sources": [
+      "history-design-future.md"
+    ],
+    "slot_meta": {
+      "header": "History, Design and Future { #history-design-and-future } > Alternatives { #alte",
+      "chunk_preview": "<blockquote markdown=\"1\">  \n**FastAPI** wouldn't exist if not for the previous work of others.  \nThere have been many tools created before that have helped inspire its creation.  \nI have been avoiding"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I58",
+    "type": "single",
+    "doc_type": "concept",
+    "question": "How reliable is FastAPI for production use?",
+    "expected_sources": [
+      "features.md"
+    ],
+    "slot_meta": {
+      "header": "Features { #features } > FastAPI features { #fastapi-features } > Tested { #test",
+      "chunk_preview": "### Tested { #tested }  \n* 100% <dfn title=\"The amount of code that is automatically tested\">test coverage</dfn>.\n* 100% <dfn title=\"Python type annotations, with this your editor and external tools c"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I59",
+    "type": "single",
+    "doc_type": "concept",
+    "question": "How does the operating system find programs when you type a command in the terminal?",
+    "expected_sources": [
+      "environment-variables.md"
+    ],
+    "slot_meta": {
+      "header": "Environment Variables { #environment-variables } > `PATH` Environment Variable {",
+      "chunk_preview": "* `C:\\Program Files\\Python312`\n* `C:\\Windows\\System32`  \n////  \nWhen you type a **command** in the terminal, the operating system **looks for** the program in **each of those directories** listed in t"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I60",
+    "type": "single",
+    "doc_type": "concept",
+    "question": "How does Python handle asynchronous code execution?",
+    "expected_sources": [
+      "async.md"
+    ],
+    "slot_meta": {
+      "header": "Concurrency and async / await { #concurrency-and-async-await } > Technical Detai",
+      "chunk_preview": "## Technical Details { #technical-details }  \nModern versions of Python have support for **\"asynchronous code\"** using something called **\"coroutines\"**, with **`async` and `await`** syntax.  \nLet's s"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I61",
+    "type": "single",
+    "doc_type": "concept",
+    "question": "What command should be used to run a FastAPI app in production?",
+    "expected_sources": [
+      "fastapi-cli.md"
+    ],
+    "slot_meta": {
+      "header": "FastAPI CLI { #fastapi-cli }",
+      "chunk_preview": "```  \n</div>  \n/// tip  \nFor production you would use `fastapi run` instead of `fastapi dev`. 🚀  \n///  \nInternally, **FastAPI CLI** uses [Uvicorn](https://www.uvicorn.dev), a high-performance, product"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I62",
+    "type": "single",
+    "doc_type": "concept",
+    "question": "Where should I start to learn FastAPI?",
+    "expected_sources": [
+      "learn/index.md"
+    ],
+    "slot_meta": {
+      "header": "Learn { #learn }",
+      "chunk_preview": "# Learn { #learn }  \nHere are the introductory sections and the tutorials to learn **FastAPI**.  \nYou could consider this a **book**, a **course**, the **official** and recommended way to learn FastAP"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I63",
+    "type": "single",
+    "doc_type": "concept",
+    "question": "What is the purpose of this page about FastAPI?",
+    "expected_sources": [
+      "about/index.md"
+    ],
+    "slot_meta": {
+      "header": "About { #about }",
+      "chunk_preview": "# About { #about }  \nAbout FastAPI, its design, inspiration and more. 🤓"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I64",
+    "type": "single",
+    "doc_type": "concept",
+    "question": "How can I use a custom class as a type for a variable?",
+    "expected_sources": [
+      "python-types.md"
+    ],
+    "slot_meta": {
+      "header": "Python Types Intro { #python-types-intro } > Declaring types { #declaring-types ",
+      "chunk_preview": "### Classes as types { #classes-as-types }  \nYou can also declare a class as the type of a variable.  \nLet's say you have a class `Person`, with a name:  \n{* ../../docs_src/python_types/tutorial010_py"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I65",
+    "type": "single",
+    "doc_type": "concept",
+    "question": "How do I run my program after setting up a virtual environment?",
+    "expected_sources": [
+      "virtual-environments.md"
+    ],
+    "slot_meta": {
+      "header": "Virtual Environments { #virtual-environments } > Run Your Program { #run-your-pr",
+      "chunk_preview": "## Run Your Program { #run-your-program }  \nAfter you activated the virtual environment, you can run your program, and it will use the Python inside of your virtual environment with the packages you i"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I07",
+    "type": "single",
+    "doc_type": "tutorial",
+    "question": "How do you declare cookie parameters in a FastAPI endpoint?",
+    "expected_sources": [
+      "tutorial/cookie-params.md"
+    ],
+    "slot_meta": {
+      "header": "Cookie Parameters { #cookie-parameters } > Declare `Cookie` parameters { #declar",
+      "chunk_preview": "## Declare `Cookie` parameters { #declare-cookie-parameters }  \nThen declare the cookie parameters using the same structure as with `Path` and `Query`.  \nYou can define the default value as well as al"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I22",
+    "type": "single",
+    "doc_type": "advanced",
+    "question": "How can I return a different HTTP status code than the default?",
+    "expected_sources": [
+      "advanced/response-change-status-code.md"
+    ],
+    "slot_meta": {
+      "header": "Response - Change Status Code { #response-change-status-code }",
+      "chunk_preview": "# Response - Change Status Code { #response-change-status-code }  \nYou probably read before that you can set a default [Response Status Code](../tutorial/response-status-code.md).  \nBut in some cases "
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "I45",
+    "type": "single",
+    "doc_type": "reference",
+    "question": "How do I implement OAuth2 scopes in FastAPI?",
+    "expected_sources": [
+      "reference/security/index.md"
+    ],
+    "slot_meta": {
+      "header": "Security Tools",
+      "chunk_preview": "# Security Tools  \nWhen you need to declare dependencies with OAuth2 scopes you use `Security()`.  \nBut you still need to define what is the dependable, the callable that you pass as a parameter to `D"
+    },
+    "verified": false,
+    "split": "tuning"
+  },
+  {
+    "id": "I48",
+    "type": "single",
+    "doc_type": "guide",
+    "question": "How can I automate upgrading from Pydantic v1 to v2?",
+    "expected_sources": [
+      "how-to/migrate-from-pydantic-v1-to-pydantic-v2.md"
+    ],
+    "slot_meta": {
+      "header": "Migrate from Pydantic v1 to Pydantic v2 { #migrate-from-pydantic-v1-to-pydantic-",
+      "chunk_preview": "## `bump-pydantic` { #bump-pydantic }  \nIn many cases, when you use regular Pydantic models without customizations, you will be able to automate most of the process of migrating from Pydantic v1 to Py"
+    },
+    "verified": false,
+    "split": "test"
+  },
+  {
+    "id": "H01",
+    "type": "hard-oos",
+    "hard_category": "competitor",
+    "question": "How do I register a Flask route that handles both GET and POST methods?",
+    "expected_sources": [],
+    "split": "test"
+  },
+  {
+    "id": "H02",
+    "type": "hard-oos",
+    "hard_category": "competitor",
+    "question": "How do I serialize a Django model into JSON using Django REST Framework's ModelSerializer?",
+    "expected_sources": [],
+    "split": "test"
+  },
+  {
+    "id": "H03",
+    "type": "hard-oos",
+    "hard_category": "nonexistent_feature",
+    "question": "How do I enable FastAPI's built-in rate limiting per IP address?",
+    "expected_sources": [],
+    "split": "test"
+  },
+  {
+    "id": "H04",
+    "type": "hard-oos",
+    "hard_category": "nonexistent_feature",
+    "question": "How do I use FastAPI's native admin dashboard to manage my API endpoints?",
+    "expected_sources": [],
+    "split": "tuning"
+  },
+  {
+    "id": "H05",
+    "type": "hard-oos",
+    "hard_category": "deeper_layer",
+    "question": "How does Python's asyncio event loop internally schedule coroutines and decide which one to run next?",
+    "expected_sources": [],
+    "split": "tuning"
+  },
+  {
+    "id": "H06",
+    "type": "hard-oos",
+    "hard_category": "deeper_layer",
+    "question": "How do I write a custom Pydantic v1 validator that works with nested BaseModel fields?",
+    "expected_sources": [],
+    "split": "test"
+  },
+  {
+    "id": "H07",
+    "type": "hard-oos",
+    "hard_category": "out_of_scope",
+    "question": "Walk me through how FastAPI implements its dependency injection at the source code level — which classes resolve the Depends graph?",
+    "expected_sources": [],
+    "split": "test"
+  },
+  {
+    "id": "H08",
+    "type": "hard-oos",
+    "hard_category": "out_of_scope",
+    "question": "How does Python's GIL affect FastAPI's actual request throughput on a multi-core server under CPU-bound workloads?",
+    "expected_sources": [],
+    "split": "test"
+  },
+  {
+    "id": "I42",
+    "type": "single",
+    "doc_type": "reference",
+    "question": "How do I serve static files like CSS and images in FastAPI?",
+    "expected_sources": [
+      "reference/staticfiles.md"
+    ],
+    "slot_meta": {
+      "header": "(manually added: auto-filter false-positive on topic-vocabulary overlap)",
+      "chunk_preview": "(see reference/staticfiles.md)"
+    },
+    "verified": true,
+    "split": "test"
+  }
+]

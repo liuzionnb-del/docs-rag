@@ -1,0 +1,392 @@
+[
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/security/first-steps.md",
+    "header": "Security - First Steps { #security-first-steps } > **FastAPI",
+    "preview": "///  \nThe `oauth2_scheme` variable is an instance of `OAuth2PasswordBearer`, but it is also a \"callable\".  \nIt could be "
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/cookie-param-models.md",
+    "header": "Cookie Parameter Models { #cookie-parameter-models } > Forbi",
+    "preview": "If a client tries to send some **extra cookies**, they will receive an **error** response.  \nPoor cookie banners with al"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/bigger-applications.md",
+    "header": "Bigger Applications - Multiple Files { #bigger-applications-",
+    "preview": "### Include an `APIRouter` with a custom `prefix`, `tags`, `responses`, and `dependencies` { #include-an-apirouter-with-"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/encoder.md",
+    "header": "JSON Compatible Encoder { #json-compatible-encoder }",
+    "preview": "# JSON Compatible Encoder { #json-compatible-encoder }  \nThere are some cases where you might need to convert a data typ"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/dependencies/index.md",
+    "header": "Dependencies { #dependencies } > **FastAPI** compatibility {",
+    "preview": "## **FastAPI** compatibility { #fastapi-compatibility }  \nThe simplicity of the dependency injection system makes **Fast"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/dependencies/global-dependencies.md",
+    "header": "Global Dependencies { #global-dependencies } > Dependencies ",
+    "preview": "## Dependencies for groups of *path operations* { #dependencies-for-groups-of-path-operations }  \nLater, when reading ab"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/cookie-params.md",
+    "header": "Cookie Parameters { #cookie-parameters } > Declare `Cookie` ",
+    "preview": "## Declare `Cookie` parameters { #declare-cookie-parameters }  \nThen declare the cookie parameters using the same struct"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/body.md",
+    "header": "Request Body { #request-body } > Create your data model { #c",
+    "preview": "## Create your data model { #create-your-data-model }  \nThen you declare your data model as a class that inherits from `"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/request-form-models.md",
+    "header": "Form Models { #form-models } > Forbid Extra Form Fields { #f",
+    "preview": "## Forbid Extra Form Fields { #forbid-extra-form-fields }  \nIn some special use cases (probably not very common), you mi"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/body-updates.md",
+    "header": "Body - Updates { #body-updates } > Partial updates with `PAT",
+    "preview": "* Convert the copied model to something that can be stored in your DB (for example, using the `jsonable_encoder`).\n* Thi"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/response-model.md",
+    "header": "Response Model - Return Type { #response-model-return-type }",
+    "preview": "### `response_model` or Return Type { #response-model-or-return-type }  \nIn this case, because the two models are differ"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/path-operation-configuration.md",
+    "header": "Path Operation Configuration { #path-operation-configuration",
+    "preview": "## Tags { #tags }  \nYou can add tags to your *path operation*, pass the parameter `tags` with a `list` of `str` (commonl"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/body-fields.md",
+    "header": "Body - Fields { #body-fields } > Import `Field` { #import-fi",
+    "preview": "## Import `Field` { #import-field }  \nFirst, you have to import it:  \n{* ../../docs_src/body_fields/tutorial001_an_py310"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/static-files.md",
+    "header": "Static Files { #static-files } > Use `StaticFiles` { #use-st",
+    "preview": "## Use `StaticFiles` { #use-staticfiles }  \n* Import `StaticFiles`.\n* \"Mount\" a `StaticFiles()` instance in a specific p"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/testing.md",
+    "header": "Testing { #testing } > Separating tests { #separating-tests ",
+    "preview": "### **FastAPI** app file { #fastapi-app-file }  \nLet's say you have a file structure as described in [Bigger Application"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/dependencies/dependencies-with-yield.md",
+    "header": "Dependencies with yield { #dependencies-with-yield } > Sub-d",
+    "preview": "## Sub-dependencies with `yield` { #sub-dependencies-with-yield }  \nYou can have sub-dependencies and \"trees\" of sub-dep"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/security/simple-oauth2.md",
+    "header": "Simple OAuth2 with Password and Bearer { #simple-oauth2-with",
+    "preview": "### `OAuth2PasswordRequestForm` { #oauth2passwordrequestform }  \nFirst, import `OAuth2PasswordRequestForm`, and use it a"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/query-params.md",
+    "header": "Query Parameters { #query-parameters } > Required query para",
+    "preview": "## Required query parameters { #required-query-parameters }  \nWhen you declare a default value for non-path parameters ("
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/request-forms.md",
+    "header": "Form Data { #form-data }",
+    "preview": "# Form Data { #form-data }  \nWhen you need to receive form fields instead of JSON, you can use `Form`.  \n/// note  \nTo u"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/sql-databases.md",
+    "header": "SQL (Relational) Databases { #sql-relational-databases } > C",
+    "preview": "### Read Heroes { #read-heroes }  \nWe can **read** `Hero`s from the database using a `select()`. We can include a `limit"
+  },
+  {
+    "doc_type": "tutorial",
+    "file": "tutorial/security/index.md",
+    "header": "Security { #security } > OpenID Connect { #openid-connect } ",
+    "preview": "### OpenID (not \"OpenID Connect\") { #openid-not-openid-connect }  \nThere was also an \"OpenID\" specification. That tried "
+  },
+  {
+    "doc_type": "advanced",
+    "file": "advanced/response-change-status-code.md",
+    "header": "Response - Change Status Code { #response-change-status-code",
+    "preview": "# Response - Change Status Code { #response-change-status-code }  \nYou probably read before that you can set a default ["
+  },
+  {
+    "doc_type": "advanced",
+    "file": "advanced/advanced-dependencies.md",
+    "header": "Advanced Dependencies { #advanced-dependencies } > Dependenc",
+    "preview": "### Dependencies with `yield` and `scope` { #dependencies-with-yield-and-scope }  \nIn version 0.121.0, FastAPI added sup"
+  },
+  {
+    "doc_type": "advanced",
+    "file": "advanced/testing-events.md",
+    "header": "Testing Events: lifespan and startup - shutdown { #testing-e",
+    "preview": "# Testing Events: lifespan and startup - shutdown { #testing-events-lifespan-and-startup-shutdown }  \nWhen you need `lif"
+  },
+  {
+    "doc_type": "advanced",
+    "file": "advanced/response-cookies.md",
+    "header": "Response Cookies { #response-cookies } > Use a `Response` pa",
+    "preview": "# Response Cookies { #response-cookies }  \n## Use a `Response` parameter { #use-a-response-parameter }  \nYou can declare"
+  },
+  {
+    "doc_type": "advanced",
+    "file": "advanced/advanced-python-types.md",
+    "header": "Advanced Python Types { #advanced-python-types } > Using `Un",
+    "preview": "## Using `Union` or `Optional` { #using-union-or-optional }  \nIf your code for some reason can't use `|`, for example if"
+  },
+  {
+    "doc_type": "advanced",
+    "file": "advanced/middleware.md",
+    "header": "Advanced Middleware { #advanced-middleware } > Other middlew",
+    "preview": "## Other middlewares { #other-middlewares }  \nThere are many other ASGI middlewares.  \nFor example:  \n* [Uvicorn's `Prox"
+  },
+  {
+    "doc_type": "advanced",
+    "file": "advanced/websockets.md",
+    "header": "WebSockets { #websockets } > WebSockets client { #websockets",
+    "preview": "## WebSockets client { #websockets-client }  \n### In production { #in-production }  \nIn your production system, you prob"
+  },
+  {
+    "doc_type": "advanced",
+    "file": "advanced/testing-websockets.md",
+    "header": "Testing WebSockets { #testing-websockets }",
+    "preview": "# Testing WebSockets { #testing-websockets }  \nYou can use the same `TestClient` to test WebSockets.  \nFor this, you use"
+  },
+  {
+    "doc_type": "advanced",
+    "file": "advanced/generate-clients.md",
+    "header": "Generating SDKs { #generating-sdks } > FastAPI App with Tags",
+    "preview": "## FastAPI App with Tags { #fastapi-app-with-tags }  \nIn many cases, your FastAPI app will be bigger, and you will proba"
+  },
+  {
+    "doc_type": "advanced",
+    "file": "advanced/security/http-basic-auth.md",
+    "header": "HTTP Basic Auth { #http-basic-auth } > Check the username { ",
+    "preview": "But in our code we are actually using `secrets.compare_digest()`.  \nIn short, it will take the same time to compare `sta"
+  },
+  {
+    "doc_type": "advanced",
+    "file": "advanced/response-headers.md",
+    "header": "Response Headers { #response-headers } > Custom Headers { #c",
+    "preview": "## Custom Headers { #custom-headers }  \nKeep in mind that custom proprietary headers can be added [using the `X-` prefix"
+  },
+  {
+    "doc_type": "advanced",
+    "file": "advanced/json-base64-bytes.md",
+    "header": "JSON with Bytes as Base64 { #json-with-bytes-as-base64 } > P",
+    "preview": "```json\n{\n\"description\": \"Some data\",\n\"data\": \"aGVsbG8=\"\n}\n```  \n/// tip  \n`aGVsbG8=` is the base64 encoding of `hello`."
+  },
+  {
+    "doc_type": "advanced",
+    "file": "advanced/response-directly.md",
+    "header": "Return a Response Directly { #return-a-response-directly } >",
+    "preview": "## Return a `Response` { #return-a-response }  \nYou can return a `Response` or any sub-class of it.  \n/// note  \n`JSONRe"
+  },
+  {
+    "doc_type": "advanced",
+    "file": "advanced/custom-response.md",
+    "header": "Custom Response - HTML, Stream, File, others { #custom-respo",
+    "preview": "### `JSONResponse` { #jsonresponse }  \nTakes some data and returns an `application/json` encoded response.  \nThis is the"
+  },
+  {
+    "doc_type": "advanced",
+    "file": "advanced/templates.md",
+    "header": "Templates { #templates } > Using `Jinja2Templates` { #using-",
+    "preview": "## Using `Jinja2Templates` { #using-jinja2templates }  \n* Import `Jinja2Templates`.\n* Create a `templates` object that y"
+  },
+  {
+    "doc_type": "reference",
+    "file": "reference/httpconnection.md",
+    "header": "`HTTPConnection` class",
+    "preview": "# `HTTPConnection` class  \nWhen you want to define dependencies that should be compatible with both HTTP and WebSockets,"
+  },
+  {
+    "doc_type": "reference",
+    "file": "reference/uploadfile.md",
+    "header": "`UploadFile` class",
+    "preview": "# `UploadFile` class  \nYou can define *path operation function* parameters to be of the type `UploadFile` to receive fil"
+  },
+  {
+    "doc_type": "reference",
+    "file": "reference/middleware.md",
+    "header": "Middleware",
+    "preview": "# Middleware  \nThere are several middlewares available provided by Starlette directly.  \nRead more about them in the [Fa"
+  },
+  {
+    "doc_type": "reference",
+    "file": "reference/dependencies.md",
+    "header": "Dependencies - `Depends()` and `Security()` > `Depends()`",
+    "preview": "# Dependencies - `Depends()` and `Security()`  \n## `Depends()`  \nDependencies are handled mainly with the special functi"
+  },
+  {
+    "doc_type": "reference",
+    "file": "reference/fastapi.md",
+    "header": "`FastAPI` class",
+    "preview": "# `FastAPI` class  \nHere's the reference information for the `FastAPI` class, with all its parameters, attributes and me"
+  },
+  {
+    "doc_type": "reference",
+    "file": "reference/staticfiles.md",
+    "header": "Static Files - `StaticFiles`",
+    "preview": "# Static Files - `StaticFiles`  \nYou can use the `StaticFiles` class to serve static files, like JavaScript, CSS, images"
+  },
+  {
+    "doc_type": "reference",
+    "file": "reference/index.md",
+    "header": "Reference",
+    "preview": "# Reference  \nHere's the reference or code API, the classes, functions, parameters, attributes, and\nall the FastAPI part"
+  },
+  {
+    "doc_type": "reference",
+    "file": "reference/status.md",
+    "header": "Status Codes",
+    "preview": "* 403: `status.HTTP_403_FORBIDDEN`\n* etc.  \nIt can be convenient to quickly access HTTP (and WebSocket) status codes in "
+  },
+  {
+    "doc_type": "reference",
+    "file": "reference/security/index.md",
+    "header": "Security Tools",
+    "preview": "# Security Tools  \nWhen you need to declare dependencies with OAuth2 scopes you use `Security()`.  \nBut you still need t"
+  },
+  {
+    "doc_type": "reference",
+    "file": "reference/websockets.md",
+    "header": "WebSockets",
+    "preview": "# WebSockets  \nWhen defining WebSockets, you normally declare a parameter of type `WebSocket` and with it you can read d"
+  },
+  {
+    "doc_type": "guide",
+    "file": "deployment/manually.md",
+    "header": "Run a Server Manually { #run-a-server-manually } > Use the `",
+    "preview": "<span style=\"background-color:#007166\"><font color=\"#D3D7CF\"> server </font></span>  Server started at <font color=\"#729"
+  },
+  {
+    "doc_type": "guide",
+    "file": "how-to/migrate-from-pydantic-v1-to-pydantic-v2.md",
+    "header": "Migrate from Pydantic v1 to Pydantic v2 { #migrate-from-pyda",
+    "preview": "## `bump-pydantic` { #bump-pydantic }  \nIn many cases, when you use regular Pydantic models without customizations, you "
+  },
+  {
+    "doc_type": "guide",
+    "file": "how-to/conditional-openapi.md",
+    "header": "Conditional OpenAPI { #conditional-openapi } > About securit",
+    "preview": "## About security, APIs, and docs { #about-security-apis-and-docs }  \nHiding your documentation user interfaces in produ"
+  },
+  {
+    "doc_type": "guide",
+    "file": "how-to/testing-database.md",
+    "header": "Testing a Database { #testing-a-database }",
+    "preview": "# Testing a Database { #testing-a-database }  \nYou can study about databases, SQL, and SQLModel in the [SQLModel docs](h"
+  },
+  {
+    "doc_type": "guide",
+    "file": "how-to/general.md",
+    "header": "General - How To - Recipes { #general-how-to-recipes } > Ope",
+    "preview": "## OpenAPI Docs URLs { #openapi-docs-urls }  \nTo update the URLs used for the automatically generated docs user interfac"
+  },
+  {
+    "doc_type": "guide",
+    "file": "how-to/custom-docs-ui-assets.md",
+    "header": "Custom Docs UI Static Assets (Self-Hosting) { #custom-docs-u",
+    "preview": "### Download the files { #download-the-files }  \nDownload the static files needed for the docs and put them on that `sta"
+  },
+  {
+    "doc_type": "guide",
+    "file": "how-to/extending-openapi.md",
+    "header": "Extending OpenAPI { #extending-openapi } > Overriding the de",
+    "preview": "### Cache the OpenAPI schema { #cache-the-openapi-schema }  \nYou can use the property `.openapi_schema` as a \"cache\", to"
+  },
+  {
+    "doc_type": "guide",
+    "file": "how-to/separate-openapi-schemas.md",
+    "header": "Separate OpenAPI Schemas for Input and Output or Not { #sepa",
+    "preview": "<div class=\"screenshot\">\n<img src=\"/img/tutorial/separate-openapi-schemas/image04.png\">\n</div>  \nWith this feature from "
+  },
+  {
+    "doc_type": "guide",
+    "file": "deployment/server-workers.md",
+    "header": "Server Workers - Uvicorn with Workers { #server-workers-uvic",
+    "preview": "<span style=\"background-color:#007166\"><font color=\"#D3D7CF\"> INFO </font></span>  Started server process <b>[</b><font "
+  },
+  {
+    "doc_type": "concept",
+    "file": "project-generation.md",
+    "header": "Full Stack FastAPI Template { #full-stack-fastapi-template }",
+    "preview": "## Full Stack FastAPI Template - Technology Stack and Features { #full-stack-fastapi-template-technology-stack-and-featu"
+  },
+  {
+    "doc_type": "concept",
+    "file": "history-design-future.md",
+    "header": "History, Design and Future { #history-design-and-future } > ",
+    "preview": "<blockquote markdown=\"1\">  \n**FastAPI** wouldn't exist if not for the previous work of others.  \nThere have been many to"
+  },
+  {
+    "doc_type": "concept",
+    "file": "features.md",
+    "header": "Features { #features } > FastAPI features { #fastapi-feature",
+    "preview": "### Tested { #tested }  \n* 100% <dfn title=\"The amount of code that is automatically tested\">test coverage</dfn>.\n* 100%"
+  },
+  {
+    "doc_type": "concept",
+    "file": "environment-variables.md",
+    "header": "Environment Variables { #environment-variables } > `PATH` En",
+    "preview": "* `C:\\Program Files\\Python312`\n* `C:\\Windows\\System32`  \n////  \nWhen you type a **command** in the terminal, the operati"
+  },
+  {
+    "doc_type": "concept",
+    "file": "async.md",
+    "header": "Concurrency and async / await { #concurrency-and-async-await",
+    "preview": "## Technical Details { #technical-details }  \nModern versions of Python have support for **\"asynchronous code\"** using s"
+  },
+  {
+    "doc_type": "concept",
+    "file": "fastapi-cli.md",
+    "header": "FastAPI CLI { #fastapi-cli }",
+    "preview": "```  \n</div>  \n/// tip  \nFor production you would use `fastapi run` instead of `fastapi dev`. 🚀  \n///  \nInternally, **Fa"
+  },
+  {
+    "doc_type": "concept",
+    "file": "learn/index.md",
+    "header": "Learn { #learn }",
+    "preview": "# Learn { #learn }  \nHere are the introductory sections and the tutorials to learn **FastAPI**.  \nYou could consider thi"
+  },
+  {
+    "doc_type": "concept",
+    "file": "about/index.md",
+    "header": "About { #about }",
+    "preview": "# About { #about }  \nAbout FastAPI, its design, inspiration and more. 🤓"
+  },
+  {
+    "doc_type": "concept",
+    "file": "python-types.md",
+    "header": "Python Types Intro { #python-types-intro } > Declaring types",
+    "preview": "### Classes as types { #classes-as-types }  \nYou can also declare a class as the type of a variable.  \nLet's say you hav"
+  },
+  {
+    "doc_type": "concept",
+    "file": "virtual-environments.md",
+    "header": "Virtual Environments { #virtual-environments } > Run Your Pr",
+    "preview": "## Run Your Program { #run-your-program }  \nAfter you activated the virtual environment, you can run your program, and i"
+  }
+]

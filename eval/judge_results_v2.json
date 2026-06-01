@@ -1,0 +1,506 @@
+{
+  "split": "test",
+  "summary": {
+    "n_judged": 46,
+    "n_rejected": 0,
+    "global": {
+      "faithfulness": 0.848,
+      "relevancy": 0.935,
+      "citation": 0.832
+    },
+    "per_type": {
+      "tutorial": {
+        "n": 15,
+        "faithfulness": 0.717,
+        "relevancy": 0.933,
+        "citation": 0.667
+      },
+      "advanced": {
+        "n": 11,
+        "faithfulness": 0.932,
+        "relevancy": 0.818,
+        "citation": 0.932
+      },
+      "reference": {
+        "n": 7,
+        "faithfulness": 0.786,
+        "relevancy": 1.0,
+        "citation": 0.786
+      },
+      "guide": {
+        "n": 6,
+        "faithfulness": 1.0,
+        "relevancy": 1.0,
+        "citation": 1.0
+      },
+      "concept": {
+        "n": 7,
+        "faithfulness": 0.929,
+        "relevancy": 1.0,
+        "citation": 0.929
+      }
+    }
+  },
+  "details": [
+    {
+      "id": "I01",
+      "doc_type": "tutorial",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "All claims are supported by the retrieved context, the answer directly addresses the question, and citations correctly point to the supporting source."
+    },
+    {
+      "id": "I02",
+      "doc_type": "tutorial",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.0,
+      "relevancy": 1.0,
+      "citation": 0.0,
+      "comment": "The answer claims extra cookies cause an error and cites [4] and [3], but the retrieved context does not contain any information about error responses or Pydantic configuration, making the claims unsupported and citations invalid."
+    },
+    {
+      "id": "I03",
+      "doc_type": "tutorial",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.75,
+      "relevancy": 1.0,
+      "citation": 0.75,
+      "comment": "The answer is relevant and mostly faithful, but the claim about overriding configurations is not directly supported by the cited context."
+    },
+    {
+      "id": "I04",
+      "doc_type": "tutorial",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer is fully supported by the retrieved context, directly addresses the question, and correctly cites the source."
+    },
+    {
+      "id": "I05",
+      "doc_type": "tutorial",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.75,
+      "relevancy": 1.0,
+      "citation": 0.0,
+      "comment": "The answer is relevant and mostly faithful, but citations are incorrect as [1] does not support all listed items and [2] and [3] are not properly cited for the specific claims."
+    },
+    {
+      "id": "I08",
+      "doc_type": "tutorial",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer is fully supported by the retrieved context, directly addresses the question, and correctly uses citation markers [1] and [2]."
+    },
+    {
+      "id": "I11",
+      "doc_type": "tutorial",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer accurately extracts and cites relevant points from the retrieved context about when to use response_model."
+    },
+    {
+      "id": "I13",
+      "doc_type": "tutorial",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.75,
+      "relevancy": 1.0,
+      "citation": 0.75,
+      "comment": "The answer is relevant and mostly faithful, but the claim about release notes examples [2][3] is not verifiable from the provided context, and the warning about other utilities is not explicitly supported by the given context."
+    },
+    {
+      "id": "I14",
+      "doc_type": "tutorial",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer is fully faithful to the retrieved context, directly addresses the question, and correctly uses source markers [1], [2], [3], and [4] to support each claim."
+    },
+    {
+      "id": "I15",
+      "doc_type": "tutorial",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.75,
+      "relevancy": 1.0,
+      "citation": 0.75,
+      "comment": "The answer is mostly faithful and relevant, but the single-file structure from source [3] is about Docker deployment, not testing, and the citation for that part is slightly off."
+    },
+    {
+      "id": "I17",
+      "doc_type": "tutorial",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.0,
+      "relevancy": 0.0,
+      "citation": 0.0,
+      "comment": "The retrieved context is from release-notes.md and contains no information about FastAPI form handling, so the answer is completely unsupported and irrelevant."
+    },
+    {
+      "id": "I18",
+      "doc_type": "tutorial",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.75,
+      "relevancy": 1.0,
+      "citation": 0.75,
+      "comment": "The answer is relevant and mostly faithful, but citation [3] is from a body tutorial not about query parameters, and citation [2] is about dependencies, not directly supporting the Annotated example."
+    },
+    {
+      "id": "I19",
+      "doc_type": "tutorial",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.0,
+      "relevancy": 1.0,
+      "citation": 0.0,
+      "comment": "The answer claims that the code examples and specific details come from sources [3] and [4], but those sources are release-notes.md, which likely do not contain such code examples, and source [1] is about parameters, not form handling."
+    },
+    {
+      "id": "I20",
+      "doc_type": "tutorial",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer correctly states lack of information, which is faithful to the retrieved context and directly addresses the question, with no citations needed."
+    },
+    {
+      "id": "I21",
+      "doc_type": "tutorial",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer accurately distinguishes OpenID and OpenID Connect using supported claims from the retrieved context with correct citations."
+    },
+    {
+      "id": "I23",
+      "doc_type": "advanced",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.75,
+      "relevancy": 1.0,
+      "citation": 0.75,
+      "comment": "The answer is relevant and mostly faithful, but claim about version-specific timing is not supported by context [4] which only discusses cleanup order, not version differences; citation [4] is partially correct but the version detail is unsupported."
+    },
+    {
+      "id": "I24",
+      "doc_type": "advanced",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 0.0,
+      "citation": 1.0,
+      "comment": "The answer is faithful to the context by stating lack of information, but it is not relevant as it fails to address the question about testing lifespan events."
+    },
+    {
+      "id": "I29",
+      "doc_type": "advanced",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer accurately states the lack of WebSocket testing details in the provided context and correctly cites the relevant sources."
+    },
+    {
+      "id": "I30",
+      "doc_type": "advanced",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer is fully faithful to the retrieved context, directly addresses the question, and correctly cites the relevant sources."
+    },
+    {
+      "id": "I31",
+      "doc_type": "advanced",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 0.0,
+      "citation": 1.0,
+      "comment": "The answer is faithful to the context (no claims made) but completely irrelevant as it refuses to answer the question."
+    },
+    {
+      "id": "I32",
+      "doc_type": "advanced",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.75,
+      "relevancy": 1.0,
+      "citation": 0.75,
+      "comment": "The answer is relevant and mostly faithful, but the claim about custom proprietary headers using the X- prefix is not directly supported by the retrieved context snippets."
+    },
+    {
+      "id": "I33",
+      "doc_type": "advanced",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer correctly states lack of information based on retrieved context, with no claims to verify and no citations needed."
+    },
+    {
+      "id": "I34",
+      "doc_type": "advanced",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer is fully faithful to the retrieved context, directly addresses the question, and correctly cites the relevant sources."
+    },
+    {
+      "id": "I35",
+      "doc_type": "advanced",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer correctly states that JSONResponse is the default response type in FastAPI and properly cites the supporting context."
+    },
+    {
+      "id": "I36",
+      "doc_type": "advanced",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "All claims are supported by the retrieved context, the answer directly addresses the question, and citations correctly point to the supporting sources."
+    },
+    {
+      "id": "I38",
+      "doc_type": "reference",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.75,
+      "relevancy": 1.0,
+      "citation": 0.75,
+      "comment": "The answer is mostly faithful and relevant, but the claim about 'size' attribute is not supported by the retrieved context, and some citations are imprecise."
+    },
+    {
+      "id": "I39",
+      "doc_type": "reference",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer accurately states the limitations of the retrieved context and correctly cites the sources."
+    },
+    {
+      "id": "I41",
+      "doc_type": "reference",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer correctly imports FastAPI, directly addresses the question, and all citations accurately reference the supporting context."
+    },
+    {
+      "id": "I43",
+      "doc_type": "reference",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.0,
+      "relevancy": 1.0,
+      "citation": 0.0,
+      "comment": "The answer claims specific URLs and documentation types not supported by the retrieved context, and citations are incorrectly assigned."
+    },
+    {
+      "id": "I44",
+      "doc_type": "reference",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.75,
+      "relevancy": 1.0,
+      "citation": 0.75,
+      "comment": "The answer is relevant and mostly faithful, but the claim that FastAPI offers the status module as a convenience from Starlette is not directly supported by the retrieved context, and citation [2] may not fully support that detail."
+    },
+    {
+      "id": "I46",
+      "doc_type": "reference",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer is fully faithful to the retrieved context, directly addresses the question, and correctly cites sources."
+    },
+    {
+      "id": "I49",
+      "doc_type": "guide",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer is fully faithful to the retrieved context, directly addresses the question, and correctly cites the relevant source."
+    },
+    {
+      "id": "I50",
+      "doc_type": "guide",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "All claims are supported by the retrieved context, the answer directly addresses the question, and citations correctly point to the supporting sources."
+    },
+    {
+      "id": "I53",
+      "doc_type": "guide",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer is fully supported by the retrieved context, directly addresses the question, and correctly cites the relevant sources."
+    },
+    {
+      "id": "I54",
+      "doc_type": "guide",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer is fully supported by the retrieved context, directly addresses the question, and correctly cites the source."
+    },
+    {
+      "id": "I55",
+      "doc_type": "guide",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer is fully supported by the retrieved context, directly addresses the question, and correctly cites the relevant sources."
+    },
+    {
+      "id": "I57",
+      "doc_type": "concept",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "All claims are supported by the retrieved context, the answer directly addresses the question, and citations correctly point to the supporting sources."
+    },
+    {
+      "id": "I58",
+      "doc_type": "concept",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.75,
+      "relevancy": 1.0,
+      "citation": 0.75,
+      "comment": "The answer is relevant and mostly faithful, but the claim about 100% test coverage is not supported by the retrieved context, and the citation for that claim is incorrect."
+    },
+    {
+      "id": "I59",
+      "doc_type": "concept",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer is fully faithful to the retrieved context, directly addresses the question, and correctly cites the source."
+    },
+    {
+      "id": "I60",
+      "doc_type": "concept",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer is fully faithful to the retrieved context, directly addresses the question, and correctly cites the sources."
+    },
+    {
+      "id": "I62",
+      "doc_type": "concept",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer correctly cites the tutorial as the starting point and is fully supported by the retrieved context."
+    },
+    {
+      "id": "I64",
+      "doc_type": "concept",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer correctly states that the retrieved context lacks relevant information, which is faithful to the context, directly addresses the question, and properly cites the sources."
+    },
+    {
+      "id": "I65",
+      "doc_type": "concept",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.75,
+      "relevancy": 1.0,
+      "citation": 0.75,
+      "comment": "The answer is relevant and mostly faithful, but the citation [4] is from a security tutorial context, not the general virtual environment setup, and the claim about 'fastapi dev' is not fully supported by the retrieved context."
+    },
+    {
+      "id": "I22",
+      "doc_type": "advanced",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 0.75,
+      "relevancy": 1.0,
+      "citation": 0.75,
+      "comment": "The answer is relevant and mostly faithful, but the claim about default JSONResponse is not directly supported by the retrieved context."
+    },
+    {
+      "id": "I48",
+      "doc_type": "guide",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "The answer accurately describes the bump-pydantic tool and gradual migration approach, both supported by the retrieved context with correct citations."
+    },
+    {
+      "id": "I42",
+      "doc_type": "reference",
+      "split": "test",
+      "rejected": false,
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "citation": 1.0,
+      "comment": "All claims are supported by the retrieved context, the answer directly addresses the question, and citations correctly point to supporting sources."
+    }
+  ]
+}

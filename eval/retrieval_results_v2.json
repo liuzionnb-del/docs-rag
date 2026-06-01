@@ -1,0 +1,121 @@
+{
+  "split": "test",
+  "results": [
+    {
+      "setting": "hybrid + rerank (full)",
+      "global": {
+        "n": 46,
+        "Hit@K": 0.826,
+        "MRR": 0.67,
+        "Ctx_Prec": 0.37,
+        "Ctx_Rec": 0.826
+      },
+      "per_type": {
+        "tutorial": {
+          "n": 15,
+          "Hit@K": 1.0,
+          "MRR": 0.794,
+          "Ctx_Prec": 0.483,
+          "Ctx_Rec": 1.0,
+          "False_Reject": 0.0
+        },
+        "advanced": {
+          "n": 11,
+          "Hit@K": 0.636,
+          "MRR": 0.5,
+          "Ctx_Prec": 0.227,
+          "Ctx_Rec": 0.636,
+          "False_Reject": 0.091
+        },
+        "reference": {
+          "n": 7,
+          "Hit@K": 0.714,
+          "MRR": 0.619,
+          "Ctx_Prec": 0.214,
+          "Ctx_Rec": 0.714,
+          "False_Reject": 0.0
+        },
+        "guide": {
+          "n": 6,
+          "Hit@K": 1.0,
+          "MRR": 0.806,
+          "Ctx_Prec": 0.417,
+          "Ctx_Rec": 1.0,
+          "False_Reject": 0.0
+        },
+        "concept": {
+          "n": 7,
+          "Hit@K": 0.714,
+          "MRR": 0.607,
+          "Ctx_Prec": 0.464,
+          "Ctx_Rec": 0.714,
+          "False_Reject": 0.0
+        }
+      },
+      "oos": {
+        "hard": {
+          "n": 6,
+          "reject_rate": 0.5
+        }
+      }
+    },
+    {
+      "setting": "hybrid no_rerank (ablation)",
+      "global": {
+        "n": 46,
+        "Hit@K": 0.761,
+        "MRR": 0.63,
+        "Ctx_Prec": 0.37,
+        "Ctx_Rec": 0.761
+      },
+      "per_type": {
+        "tutorial": {
+          "n": 15,
+          "Hit@K": 0.867,
+          "MRR": 0.756,
+          "Ctx_Prec": 0.467,
+          "Ctx_Rec": 0.867,
+          "False_Reject": 0.0
+        },
+        "advanced": {
+          "n": 11,
+          "Hit@K": 0.727,
+          "MRR": 0.515,
+          "Ctx_Prec": 0.273,
+          "Ctx_Rec": 0.727,
+          "False_Reject": 0.0
+        },
+        "reference": {
+          "n": 7,
+          "Hit@K": 0.571,
+          "MRR": 0.381,
+          "Ctx_Prec": 0.179,
+          "Ctx_Rec": 0.571,
+          "False_Reject": 0.0
+        },
+        "guide": {
+          "n": 6,
+          "Hit@K": 0.833,
+          "MRR": 0.722,
+          "Ctx_Prec": 0.417,
+          "Ctx_Rec": 0.833,
+          "False_Reject": 0.0
+        },
+        "concept": {
+          "n": 7,
+          "Hit@K": 0.714,
+          "MRR": 0.714,
+          "Ctx_Prec": 0.464,
+          "Ctx_Rec": 0.714,
+          "False_Reject": 0.0
+        }
+      },
+      "oos": {
+        "hard": {
+          "n": 6,
+          "reject_rate": 0.0
+        }
+      }
+    }
+  ]
+}
